@@ -22,13 +22,13 @@ jobs:
         
         - name: Build
           run: |
-            cd src/product-catalog
+            cd ultimate-devops-project-demo/src/product-catalog
             go mod download
             go build -o product-catalog-service main.go
 
         - name: unit tests
           run: |
-            cd src/product-catalog
+            cd ultimate-devops-project-demo/src/product-catalog
             go test ./...
     
     code-quality:
